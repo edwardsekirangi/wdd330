@@ -34,6 +34,24 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
 }
 
 p {
