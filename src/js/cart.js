@@ -2,13 +2,10 @@ import { getLocalStorage, loadHeaderFooter } from "./utils.mjs";
 
 loadHeaderFooter();
 
-let isRendered = false;
 function renderCartContents() {
-  if (isRendered) return;
-  const cartItems = getLocalStorage("so-cart") || []; // Fallback to empty array
+  const cartItems = getLocalStorage("so-cart");
   const htmlItems = cartItems.map((item) => cartItemTemplate(item));
   document.querySelector(".product-list").innerHTML = htmlItems.join("");
-  isRendered = true;
 }
 
 function cartItemTemplate(item) {
