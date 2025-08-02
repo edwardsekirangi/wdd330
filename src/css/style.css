@@ -326,7 +326,6 @@ legend {
   padding: 0 10px;
 }
 
-
 .checkout__name,
 .checkout__address,
 .checkout__payment {
@@ -413,7 +412,6 @@ input[type="text"]:focus {
 .divider {
   border-bottom: 2px solid #ccc;
 }
-
 
 @media (max-width: 400px) {
   main.checkout {
