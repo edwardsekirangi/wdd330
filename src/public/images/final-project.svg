@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Final Project Horizon</title>
+  <desc id="desc">A minimalist horizon scene with a glowing sun and the words "Final Project" at the bottom, on a transparent background.</desc>
+
+  <defs>
+    <!-- Sun glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="62%" r="25%">
+      <stop offset="0%" stop-color="#ffd27a" stop-opacity="1"></stop>
+      <stop offset="60%" stop-color="#ffd27a" stop-opacity="0.45"></stop>
+      <stop offset="100%" stop-color="#ffd27a" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <!-- Subtle text shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.35"></feDropShadow>
+    </filter>
+
+    <!-- Horizon shimmer -->
+    <linearGradient id="hLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"></stop>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.55"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun + glow near horizon (y ~ 280) -->
+  <circle cx="400" cy="280" r="120" fill="url(#sunGlow)"></circle>
+  <circle cx="400" cy="280" r="35" fill="#ffe08a"></circle>
+
+  <!-- Distant mountains -->
+  <path d="M0,300 L120,270 L200,300 L300,260 L420,300 L520,275 L650,300 L720,285 L800,300 L800,330 L0,330 Z" fill="#3f5a5c" opacity="0.35"></path>
+  <path d="M0,310 L90,290 L170,312 L260,285 L360,315 L470,295 L590,318 L700,300 L800,318 L800,360 L0,360 Z" fill="#2e4a4b" opacity="0.45"></path>
+
+  <!-- Horizon highlight line -->
+  <rect x="0" y="300" width="800" height="2" fill="url(#hLine)" opacity="0.9"></rect>
+
+  <!-- Foreground vignette -->
+  <circle cx="400" cy="280" r="200" fill="url(#sunGlow)" opacity="0.15"></circle>
+
+  <!-- Text at the bottom -->
+  <text x="50%" y="420" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="44" letter-spacing="0.12em" fill="#ffffff" filter="url(#shadow)">
+    FINAL PROJECT
+  </text>
+</svg>

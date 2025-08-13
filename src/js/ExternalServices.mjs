@@ -8,7 +8,7 @@ function convertToJson(res) {
     return res.json();
   } else {
     // Throw an error for unsuccessful responses
-    throw new Error("Bad Response");
+    throw { name: 'servicesError', message: jsonResponse };
   }
 }
 
