@@ -15,12 +15,28 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="../css/style.css"/>
     <!-- Link to JavaScript -->
-    <script src="../js/FinalProject.js"></script>
+    <script src="../js/FinalProject.js" type="module"></script>
 </head>
-<body>
+<body class="book">
     <header class="divider" id="main-header"></header>
     
     <!-- Main content goes here -->
+    <main>
+        <h1 class="book-heading">Book Recommendation App</h1>
+        <div class="search-container">
+            <label for="genre">Select a Genre:</label>
+            <select id="genre">
+              <option value="fiction">Fiction</option>
+              <option value="science fiction">Science Fiction</option>
+              <option value="mystery">Mystery</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="biography">Biography</option>
+            </select>
+            <button id="recommendButton">Get Recommendations</button>
+        </div>
+        <p class="error" id="error">Failed to load recommendations. Please try again.</p>
+        <div class="book-grid" id="bookGrid"></div>
+    </main>
 
    <footer id="main-footer"></footer>
 </body>
