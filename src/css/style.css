@@ -413,6 +413,78 @@ input[type="text"]:focus {
   border-bottom: 2px solid #ccc;
 }
 
+/* Book recommendation code here????????????????///////////// */
+/* Book recommendation code here????????????????///////////// */
+/* Book recommendation code here????????????????///////////// */
+
+ .book {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .book-heading{
+      text-align: center;
+      color: #333;
+      margin: 20px;
+    }
+    .search-container {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    select, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .book-card {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .book-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .book-card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #333;
+    }
+    .book-card p {
+      font-size: 14px;
+      color: #666;
+    }
+    .error {
+      color: red;
+      text-align: center;
+      display: none;
+    }
+
+/* Book recommendation code here????????????????///////////// */
+/* Book recommendation code here????????????????///////////// */
+/* Book recommendation code here????????????????///////////// */
+
+
 @media (max-width: 400px) {
   main.checkout {
     padding: 10px;
